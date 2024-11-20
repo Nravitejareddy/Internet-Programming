@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body> 
+    <div class="container">
+        <h1>Job Application Form</h1>
+
+        <!-- Form submission goes to submit.php -->
+        <form action="submit.php" method="POST">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" required>
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female" required> Female</label>
+                <label><input type="radio" name="gender" value="Prefer not to say" required> Prefer not to say</label>
+            </div>
+
+            <label for="degree">Highest Qualified Degree</label>
+            <select id="degree" name="degree" required>
+                <option value="" disabled selected>Select your degree</option>
+                <option value="High School Diploma">High School Diploma</option>
+                <option value="Associate Degree">Associate Degree</option>
+                <option value="Bachelor’s Degree">Bachelor’s Degree</option>
+                <option value="Master’s Degree">Master’s Degree</option>
+                <option value="PhD">PhD</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
