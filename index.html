@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="brands.js" defer></script>
+</head>
+<body>
+    <!-- Top Frame: Showroom Name -->
+    <header>
+        <h1>Welcome to Speed Wheels Bike Showroom</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <!-- Left Frame: Bike Brands -->
+        <nav class="brands">
+            <h2>Bike Brands</h2>
+            <ul>
+                <li><a href="#" onclick="showModels('brand1')">Brand 1</a></li>
+                <li><a href="#" onclick="showModels('brand2')">Brand 2</a></li>
+                <li><a href="#" onclick="showModels('brand3')">Brand 3</a></li>
+                <li><a href="#" onclick="showModels('brand4')">Brand 4</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Frame: Bike Models and Specifications -->
+        <section class="models">
+            <h2>Bike Models and Specifications</h2>
+            <div id="specs">
+                <p>Select a brand to view its models and specifications.</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

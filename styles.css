@@ -1,0 +1,79 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Flexbox Layout for Content */
+.content {
+    display: flex;
+    height: calc(100vh - 80px); /* Full height minus the header */
+}
+
+/* Left Frame: Brands List */
+nav.brands {
+    width: 25%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+nav.brands h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+nav.brands ul {
+    list-style-type: none;
+}
+
+nav.brands ul li {
+    margin-bottom: 10px;
+}
+
+nav.brands ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav.brands ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Right Frame: Models and Specs */
+section.models {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+section.models h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#specs {
+    font-size: 1rem;
+    line-height: 1.6;
+}
